@@ -24,23 +24,36 @@
 
 
         <div class="container">
-            <h1>Friimi - Montreal</h1>
+
+            <h1 class="text-center">Friimi - Montreal</h1>
 
             <div id="wrapper">
-                <ul class="pagination">
-                  <li><a href="#">&laquo;</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">&raquo;</a></li>
-                </ul>
-                <div class="panel-group" id="accordion">
+                <div class="text-center">
+                    <h4 style="margin-bottom: 0px;">Page: <span id="currentpage"></span></h4>
+                    <ul class="pagination" style="display: inline-block;">
+                      <li><a class="newpage" data-page='prev' href="#" >&laquo;</a></li>
+                      <li><a class="newpage" data-page='1' href="#">1</a></li>
+                      <li><a class="newpage" data-page='2' href="#">2</a></li>
+                      <li><a class="newpage" data-page='3' href="#">3</a></li>
+                      <li><a class="newpage" data-page='4' href="#">4</a></li>
+                      <li><a class="newpage" data-page='5' href="#">5</a></li>
+                      <li><a class="newpage" data-page='next' href="#">&raquo;</a></li>
+                    </ul>
                 </div>
+                      
+                <div class="panel-group" id="accordion"></div>
+            </div>
+
+            <div id="totals" class="text-center" style="margin: 10px">
+            </div>
+
+             <div class="footer">
+                <p> from the Friimi team</p>
             </div>
 
         </div>
+
+
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -58,6 +71,7 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
+        <script src="bower_components/backbone-pageable/lib/backbone-pageable.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
