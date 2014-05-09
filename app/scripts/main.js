@@ -8,7 +8,15 @@ window.Sites = {
     Routers: {},
     init: function () {
 
-        directory = new Sites.Views.Itemslist(directoryData);
+      $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
+         options.url = 'http://expresstestdk.herokuapp.com' + options.url;
+      });
+
+        var jqxhr = $.getJSON( "/items", function(data) {
+                directory = new Sites.Views.Itemslist(data);
+              });
+              
+        
         'use strict';
         console.log('Hello from Backbone!');
     }
