@@ -1,29 +1,29 @@
 
-  <div class="panel panel-default">
-    <div class="panel-heading" style="overflow: hidden; padding-bottom: 0px;">	
+<div class="panel panel-default">
+  <div class="panel-heading" style="overflow: hidden; padding-bottom: 0px;">	
     	<a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= ID %>">
     		<div class="panel-title" >
     			<div class="col-xs-9 col-sm-10 col-lg-11">
     				<p> <%= Title %> - <%= Company %></p>
+            <p><%= TextDate %></p>
     			</div>
     			<div class="col-xs-3 col-sm-2 col-lg-1" style="padding-right: 0px">
     				<p><span class="pull-right">FREE   <span class="glyphicon glyphicon-plus"></span></span></p>
     			</div>								
     		</div> 
 	  	</a>
-    </div>
-    <div id="collapse<%= ID %>" class="panel-collapse collapse <% if( ID == 1) {%> in <% } %>">
-      	<div class="panel-body">
+  </div>
+  <div id="collapse<%= ID %>" class="panel-collapse collapse <% if( ID == 1) {%> in <% } %>">
+      <div class="panel-body">
 	      <img  class="pull-left" src="http://placehold.it/120x120" style="padding-right: 14px;">
 	      <h4><a href=""> <%= Title %></a></h4>
-	      <h5><%= Company %>, <%= Location %> -- <%= Date %></h4>
+	      <h5><%= Company %>, <%= Location %> -- <%= TextDate %></h4>
 	      <p><%= Description%></p>
 	      <div class="pull-right">
 	      	<a href="#" class="btn btn-success btn-sm" role="button">Visit Site</a>
-	    	<a href="http://maps.google.com/maps?z=18&q=<%= Geolocation%>" class="btn btn-primary btn-sm" role="button">View on Map</a>
+	    	<a href="http://maps.google.com/maps?q=<%= Location%>, <%= City%>" class="btn btn-primary btn-sm" role="button">View on Map</a>
 	      </div>
-	      
-      	</div>
-	</div>
-  </div>
+      </div>
+	 </div>
+</div>
   

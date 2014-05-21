@@ -10,12 +10,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+
+        <style>
+         .btn-success{
+            background-color: #34b981;
+         }
+
+        .btn-success:hover{
+            background-color: #237b56;
+         }
+        </style>
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -25,11 +36,12 @@
 
         <div class="container">
 
-            <h1 class="text-center">Friimi - Montreal</h1>
-
+            <!-- <h1 class="text-center">Friimi - Montreal</h1> -->
+            <img class="center-block" src="images/friimi_crop.png" width="200">
+    
             <div id="wrapper">
                 <div class="text-center">
-                    <h4 style="margin-bottom: 0px;">Page: <span id="currentpage"></span></h4>
+                    <!-- <h4 style="margin-bottom: 0px;">Page: <span id="currentpage"></span></h4> -->
                     <ul class="pagination" style="display: inline-block;">
                       <li><a class="newpage" data-page='prev' href="#" >&laquo;</a></li>
                       <li><a class="newpage" data-page='1' href="#">1</a></li>
@@ -44,11 +56,11 @@
                 <div class="panel-group" id="accordion"></div>
             </div>
 
-            <div id="totals" class="text-center" style="margin: 10px">
+            <div id="totals" class="text-center" style="margin: 10px; color: white">
             </div>
 
              <div class="footer">
-                <p> from the Friimi team</p>
+                <p style="color: white"> from the Friimi team</p>
             </div>
 
         </div>
