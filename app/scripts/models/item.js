@@ -12,7 +12,7 @@ Sites.Models = Sites.Models || {};
 
         defaults: {
 
-            "ID" : '',
+            "_id" : '',
             "Title" : '',
             "Date": '',
             "Location": '',

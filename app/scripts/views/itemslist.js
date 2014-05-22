@@ -22,12 +22,16 @@ Sites.Views = Sites.Views || {};
 
         },
 
-        initialize: function (data) {
-            var that = this;
-            this.collection = new Sites.Collections.Items(data);
-            console.log(this.collection);
-
-            this.render();
+        initialize: function () {
+            var self = this;
+            this.collection = new Sites.Collections.Items();
+            this.collection.fetch({
+                success: function(){
+                    self.render();
+                }
+            });
+            
+            
         },
 
         render: function () {

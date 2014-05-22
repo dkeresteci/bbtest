@@ -7,6 +7,8 @@ Sites.Collections = Sites.Collections || {};
 
     Sites.Collections.Items = Backbone.PageableCollection.extend({
 
+        url:"/items",
+
         model: Sites.Models.Item,
 
         mode: "client",
